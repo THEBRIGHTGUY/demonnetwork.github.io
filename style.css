@@ -1,0 +1,42 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+    transition: background 0.5s ease; 
+    overflow-x: hidden; 
+}
+
+.heading-font { 
+    font-family: 'Oswald', sans-serif; 
+}
+
+/* Hell Mode Visual Styles */
+.hell-mode .hero-bg { 
+    filter: saturate(1.4) contrast(1.1); 
+}
+
+.hell-mode .glow-text { 
+    text-shadow: 0 0 30px rgba(220, 38, 38, 0.6); 
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1?auto=format&fit=crop&q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Copy Tooltip Animation */
+.copy-tooltip {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ea580c;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
